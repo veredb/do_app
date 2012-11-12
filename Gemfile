@@ -36,3 +36,14 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+group :test do
+   gem 'cucumber-rails', :require => false
+   gem 'database_cleaner'
+   gem 'launchy'
+   gem 'shoulda'
+end
+group :test, :development do
+  gem 'fabrication'
+  gem 'rspec-rails'
+end
+
